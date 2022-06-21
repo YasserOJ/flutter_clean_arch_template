@@ -518,4 +518,9 @@ fabric.properties
 
 !/gradle/wrapper/gradle-wrapper.jar
 
+# Generated Files
+*.freezed.dart
+*.gr.dart
+*.config.dart
+
 # End of https://www.toptal.com/developers/gitignore/api/swift,flutter,dart,macos,windows,linux,androidstudio,visualstudiocode,xcode,objective-c,android,kotlin,java
