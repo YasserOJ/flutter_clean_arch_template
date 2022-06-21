@@ -21,12 +21,27 @@ if (flutterVersionName == null) {
     flutterVersionName = '1.0'
 }
 
+def minSdkVersionProperty = localProperties.getProperty('flutter.minSdkVersion')
+if (minSdkVersionProperty == null) {
+    minSdkVersionProperty = 24
+}
+
+def targetSdkVersionProperty = localProperties.getProperty('flutter.targetSdkVersion')
+if (targetSdkVersionProperty == null) {
+    targetSdkVersionProperty = 31
+}
+
+def compileSdkVersionProperty = localProperties.getProperty('flutter.compileSdkVersion')
+if (compileSdkVersionProperty == null) {
+    compileSdkVersionProperty = 31
+}
+
 apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
 apply from: "$flutterRoot/packages/flutter_tools/gradle/flutter.gradle"
 
 android {
-    compileSdkVersion flutter.compileSdkVersion
+    compileSdkVersion compileSdkVersionProperty
     ndkVersion flutter.ndkVersion
 
     compileOptions {
@@ -47,8 +62,8 @@ android {
         applicationId "com.mine.flutter_clean_arch_template"
         // You can update the following values to match your application needs.
         // For more information, see: https://docs.flutter.dev/deployment/android#reviewing-the-build-configuration.
-        minSdkVersion flutter.minSdkVersion
-        targetSdkVersion flutter.targetSdkVersion
+        minSdkVersion minSdkVersionProperty
+        targetSdkVersion targetSdkVersionProperty
         versionCode flutterVersionCode.toInteger()
         versionName flutterVersionName
     }
