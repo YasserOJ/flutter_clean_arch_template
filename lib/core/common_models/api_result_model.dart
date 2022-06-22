@@ -1,4 +1,4 @@
-import 'package:flutter_clean_arch_template/core/common_model/error_model.dart';
+import 'package:flutter_clean_arch_template/core/common_models/error_model.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
 
 part 'api_result_model.freezed.dart';

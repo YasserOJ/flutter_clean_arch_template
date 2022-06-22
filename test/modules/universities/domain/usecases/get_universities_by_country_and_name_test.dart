@@ -1,4 +1,4 @@
-import 'package:flutter_clean_arch_template/core/common_model/api_result_model.dart';
+import 'package:flutter_clean_arch_template/core/common_models/api_result_model.dart';
 import 'package:flutter_clean_arch_template/modules/universities/domain/entities/university_entity.dart';
 import 'package:flutter_clean_arch_template/modules/universities/domain/repository/universities_repository.dart';
 import 'package:flutter_clean_arch_template/modules/universities/domain/usecases/get_universities_by_country_and_name.dart';
@@ -6,7 +6,7 @@ import 'package:flutter_test/flutter_test.dart';
 import 'package:mockito/annotations.dart';
 import 'package:mockito/mockito.dart';
 
-import 'get_universities_by_country_test.mocks.dart';
+import 'get_universities_by_country_and_name_test.mocks.dart';
 
 @GenerateMocks(<Type>[UniversitiesRepository])
 void main() {

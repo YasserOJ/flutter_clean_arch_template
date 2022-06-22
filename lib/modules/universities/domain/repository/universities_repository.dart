@@ -1,4 +1,4 @@
-import 'package:flutter_clean_arch_template/core/common_model/api_result_model.dart';
+import 'package:flutter_clean_arch_template/core/common_models/api_result_model.dart';
 import 'package:flutter_clean_arch_template/modules/universities/domain/entities/university_entity.dart';
 
 abstract class UniversitiesRepository {
