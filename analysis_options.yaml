@@ -12,8 +12,9 @@ analyzer:
     sdk_version_async_exported_from_core: ignore
   exclude:
     - "bin/cache/**"
-    - "lib/core/models/common_models/*.freezed.dart"
+    - "lib/core/common_models/*.freezed.dart"
     - "lib/generated/**"
+    - "lib/core/utils/**.config.dart"
 
 linter:
   rules:

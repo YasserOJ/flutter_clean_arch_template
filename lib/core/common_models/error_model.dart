@@ -14,13 +14,6 @@ class ErrorModel {
   int? statusCode;
   String? message;
 
-  Map<String, dynamic> toJson() {
-    final Map<String, dynamic> data = <String, dynamic>{};
-    data['errorCode'] = errorCode;
-    data['message'] = message;
-    return data;
-  }
-
   String? getErrorDescription() {
     return message;
   }
